@@ -33,7 +33,7 @@ $ to complete
 - To install from github
 
 ```shell
-$ to complete
+$ pip install git+https://github.com/halimahO/calculator.git
 ```
 
 - To get image from dockerhub 
@@ -46,11 +46,11 @@ $ to complete
 ---
 ## Contribution
 To contribute or extend this package 
-- Clone the package using to complete
-- Install dependencies using to complete
+- Clone the package using `git clone https://github.com/halimahO/calculator.git`
+- Install dependencies using `pip install -r requirements.txt`
 - Run the project using `src/calculator/python calculator.py`
 - Run the tests using `tests/pytest`
-- Add contibutions or make changes
+- Add contributions or make changes
 - Write tests if required
 - Run tests again to ensure the changes doesn't break anything
 - Push the changes to a new branch 
@@ -76,10 +76,10 @@ $ Calculator.reset()
 
 ---
 ## Testing
-Set directory to 'tests' and run
+To run the tests, run the following command
 
 ```shell
-$ pytest
+$ tests/pytest
 ```
 
 
