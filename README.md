@@ -27,7 +27,7 @@ This is a lightweight calculator package for performing simple calculation opera
 - To install the package from PyPI
 
 ```shell
-$ to complete
+$ python3 -m pip install --index-url https://test.pypi.org/simple/ --no-deps calculator-halimah
 ```
 
 - To install from github
@@ -60,26 +60,29 @@ To contribute or extend this package
 ---
 ## Sample Usage 
 ```shell
-$ Calculator.add(5)
+from calculator.calculator import Calculator
+calculator = Calculator()
 
-$ Calculator.subtract(3)
+$ calculator.add(5)
 
-$ Calculator.multiply(3)
+$ calculator.subtract(3)
 
-$ Calculator.divide(3)
+$ calculator.multiply(3)
 
-$ Calculator.root(2)
+$ calculator.divide(3)
 
-$ Calculator.reset()
+$ calculator.root(2)
+
+$ calculator.reset()
 ```
 
 
 ---
 ## Testing
-To run the tests, run the following command
+To run the tests, cd to 'tests' directory and run
 
 ```shell
-$ tests/pytest
+$ pytest
 ```
 
 
