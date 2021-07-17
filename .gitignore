@@ -6,3 +6,6 @@ conftest.py
 .idea/
 .DS_Store
 src/calculator/__pycache__
+tests/.pytest_cache
+tests/__pycache__
+__pycache__
