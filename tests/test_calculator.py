@@ -1,5 +1,6 @@
 import pytest
 from src.calculator import Calculator
+
 calculator = Calculator()
 
 def test_add():
@@ -27,7 +28,8 @@ def test_division():
     assert calculator.add(4)
     assert calculator.divide(2) == 2, "Division method fails"
     calculator.reset()
-    assert calculator.divide(0) == "Please input a valid number! Note that division by zero is invalid", "Division method fails"
+    assert calculator.divide(0) == "Please input a valid number! Note that division by zero is invalid",\
+                                    "Division method fails"
 
 def test_root():
     calculator.reset()

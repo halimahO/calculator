@@ -39,7 +39,7 @@ $ pip install git+https://github.com/halimahO/calculator.git
 - To get image from dockerhub 
 
 ```shell
-$ to complete
+$ FROM haleemah/calculator
 ```
 
 
