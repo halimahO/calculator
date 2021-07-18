@@ -27,7 +27,7 @@ This is a lightweight calculator package for performing simple calculation opera
 - To install the package from PyPI
 
 ```shell
-$ python3 -m pip install --index-url https://test.pypi.org/simple/ --no-deps calculator-halimah
+$ pip install calculator-halimah
 ```
 
 - To install from github

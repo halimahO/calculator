@@ -9,3 +9,4 @@ src/calculator/__pycache__
 tests/.pytest_cache
 tests/__pycache__
 __pycache__
+.pytest_cache
