@@ -1,7 +1,7 @@
 import pytest
-from src.calculator import Calculator
+from src.calculator import calculator
 
-calculator = Calculator()
+calculator = calculator.Calculator()
 
 def test_add():
     calculator.reset()

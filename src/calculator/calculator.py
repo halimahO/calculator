@@ -31,7 +31,7 @@ class Calculator:
         """
 
     def __init__(self, memory_value: float = 0):
-        self.__memory_value = memory_value
+        self._memory_value = memory_value
         """
         Constructs the necessary attributes for the calculator object.
 
@@ -44,46 +44,46 @@ class Calculator:
     def add(self, input_value: float) -> float:
         """Takes in a value and add it to the value in memory, returns the addition."""
         try:
-            self.__memory_value += input_value
+            self._memory_value += input_value
         except Exception as e:
             return "Please input a valid number"
-        return self.__memory_value
+        return self._memory_value
 
     def subtract(self, input_value: float) -> float:
         """Takes in a value and subtract it from the value in memory, returns the subtraction."""
         try:
-            self.__memory_value -= input_value
+            self._memory_value -= input_value
         except Exception as e:
             return "Please input a valid number"
-        return self.__memory_value
+        return self._memory_value
 
     def multiply(self, input_value: float) -> float:
         """Takes in a value and multiply it with the value in memory, returns the multiplication."""
         try:
             int(input_value)
-            self.__memory_value *= input_value
+            self._memory_value *= input_value
         except Exception as e:
             return "Please input a valid number"
-        return self.__memory_value
+        return self._memory_value
 
     def divide(self, input_value: float) -> float:
         """Takes in a value and divide it by the value in memory, returns the division."""
         try:
-            self.__memory_value /= input_value
+            self._memory_value /= input_value
         except Exception as e:
             return "Please input a valid number! Note that division by zero is invalid"
-        return self.__memory_value
+        return self._memory_value
 
     def root(self, input_value: float) -> float:
         """Takes in a value n, return the nth root of the value in memory."""
         try:
-            self.__memory_value = self.__memory_value ** (1.0 / input_value)
+            self._memory_value = self._memory_value ** (1.0 / input_value)
         except Exception as e:
             return "Please input a valid number!"
-        return self.__memory_value
+        return self._memory_value
 
 
     def reset(self):
         """Resets the value in memory to zero."""
-        self.__memory_value = 0
-        return self.__memory_value
+        self._memory_value = 0
+        return self._memory_value

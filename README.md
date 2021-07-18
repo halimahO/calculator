@@ -59,6 +59,16 @@ To contribute or extend this package
 
 ---
 ## Sample Usage 
+ 
+This calculator always uses the memory value as the start value, remember to reset to start a new calculation. For example: 
+> - 2 + 3 -- Will start by running add 2, then add 3
+> - 4 - 2 -- Will start by running add 4, then subtract 2
+> - 2 * 5 -- Will start by running add 2, then multiply 5
+> - 6 * 3 -- Will start by running add 6, then divide 3
+> - 3√4 -- Will start by running add 4, then root 3
+
+Usage example for each method is given below
+
 ```shell
 from calculator.calculator import Calculator
 calculator = Calculator()
